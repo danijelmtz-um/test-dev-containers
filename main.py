@@ -5,7 +5,7 @@ from transformers import pipeline
 app = FastAPI()
 MODEL_NAME = "siebert/sentiment-roberta-large-english"
 
-
+# uvicorn main:app --reload
 sentiment_analysis = pipeline("sentiment-analysis",model=MODEL_NAME)
 
 
