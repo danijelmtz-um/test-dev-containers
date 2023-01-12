@@ -1,5 +1,3 @@
-import json
-
 from fastapi.testclient import TestClient
 
 # Import the main script
@@ -39,7 +37,6 @@ def test_analyze():
                 },
             )
             # Assert that the response has a status code of 200 (OK)
-            print(response.json())
             assert response.status_code == 200
             # Assert that the response contains the expected sentiment
             # assert response.json()["sentiment"] == case["output"]

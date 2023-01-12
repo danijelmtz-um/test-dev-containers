@@ -10,6 +10,7 @@ MODEL_NAME = "siebert/sentiment-roberta-large-english"
 # Create a pipeline object for sentiment analysis using the defined model
 sentiment_analysis = pipeline("sentiment-analysis", model=MODEL_NAME)
 
+
 # Define a route for the root URL
 @app.get("/")
 def read_root():
